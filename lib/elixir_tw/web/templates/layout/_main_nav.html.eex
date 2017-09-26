@@ -1,12 +1,21 @@
-<div id="main-nav" class="ui fixed purple inverted large menu">
-  <div class="ui container">
-    <a class="header item" href="/">Elixir 台灣</a>
-    <div class="right item">
-      <%= if current_resource(@conn) do %>
-        <%= link("登出", to: "/logout", class: "inverted", method: :delete)%>
-      <% else %>
-        <%= link("登入", to: "/login?origin_url=#{@conn.request_path}")%>
-      <% end %>
+<div id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">Elixir 台灣</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <%= if current_resource(@conn) do %>
+          <li class="nav-item">
+            <%= link("登出", to: "/logout", class: "nav-link", method: :delete)%>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link("登入", to: "/login?origin_url=#{@conn.request_path}", class: "nav-link")%>
+          </li>
+        <% end %>
+      </ul>
     </div>
   </div>
 </div>

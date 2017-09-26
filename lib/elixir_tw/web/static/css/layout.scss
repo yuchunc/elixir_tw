@@ -1,19 +1,19 @@
-.Site {
-  background-color: hsl(52, 1%, 92%);
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+/*!
+ * Start Bootstrap - 1 Col Portfolio (http://startbootstrap.com/template-overviews/1-col-portfolio)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-1-col-portfolio/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
 }
 
-.main.container {
-  margin-top: 4.5em;
-  margin-bottom: 2em;
-  flex: 1;
-}
-
-#main-nav {
-  a {
-    color: white;
-    font-weight: bold;
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
   }
+}
+
+.pagination {
+  margin-bottom: 15px;
 }
