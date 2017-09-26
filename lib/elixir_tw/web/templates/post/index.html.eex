@@ -1,7 +1,9 @@
 <!-- Posts Listing -->
 
 <!-- Forumn Title -->
-<div class="ui top attached secondary violet inverted segment"> This is the board </div>
+<h2 class="my-4">Elixir Taiwan
+  <small>board</small>
+</h1>
 
 <!-- Post Segment -->
 <div class="ui attached bottom padded segment">

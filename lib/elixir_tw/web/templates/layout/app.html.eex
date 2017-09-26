@@ -6,26 +6,15 @@
     <%= render_existing @view_module, "style.html", assigns %>
   </head>
 
-  <body class="Site">
+  <body>
     <%= render "_main_nav.html", conn: @conn %>
 
-    <div class="ui main container">
+    <main class="container">
       <%= show_flash(@conn) %>
-      <div class="ui stackable grid">
 
-        <!-- Main Section-->
-        <main role="main" class="twelve wide column">
-          <%= render @view_module, @view_template, assigns %>
-        </main>
-
-        <!-- Sidebars -->
-        <div class="four wide column">
-          <%= if current_resource(@conn) do %>
-            <%= render(ElixirTw.Web.LayoutView, "_user_sidebar.html", conn: @conn)%>
-          <% end %>
-        </div>
-      </div>
-    </div>
+      <!-- Main Section-->
+      <%= render @view_module, @view_template, assigns %>
+    </main>
 
     <!-- Footer -->
     <footer class="ui inverted vertical footer segment">
