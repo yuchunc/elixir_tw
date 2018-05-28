@@ -88,8 +88,9 @@ defmodule Mix.Tasks.Deploy do
       deploy_dir = Mix.Project.config[:deploy_dir] || Path.join(deploy_base, app_name)
       release_base = Path.join(deploy_dir, "releases")
       current_link = Path.join(deploy_dir, "current")
-      tarball = Path.join(["_build", to_string(Mix.env), "rel",
-                           app_name, "releases", version, "#{app_name}.tar.gz"])
+      #tarball = Path.join(["_build", to_string(Mix.env), "rel",
+                           #app_name, "releases", version, "#{app_name}.tar.gz"])
+      tarball = Path.join(["rel", app_name, "releases", version, "#{app_name}.tar.gz"])
 
       defaults = %{
         app_name: app_name,
@@ -117,7 +118,7 @@ defmodule Mix.Tasks.Deploy.Local.Rollback do
   @shortdoc "Roll back to previous release"
 
   @moduledoc """
-  This task updates the current symlink to point to the previous release directory. 
+  This task updates the current symlink to point to the previous release directory.
   """
 
   use Mix.Task
