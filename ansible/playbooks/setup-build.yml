@@ -30,7 +30,6 @@
       # - vim-enhanced
       - tmux
       - git
-      - make
   roles:
     - common-minimal
     - tools-other

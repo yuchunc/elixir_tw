@@ -32,5 +32,5 @@ echo "Building release"
 mix deps.get --only "$MIX_ENV"
 mix do compile, phx.digest, release
 
-echo "Updating node libraries"
-(cd assets && npm install && node node_modules/brunch/bin/brunch build)
+#echo "Updating node libraries"
+#(cd assets && npm install && node node_modules/brunch/bin/brunch build)
