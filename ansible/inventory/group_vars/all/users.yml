@@ -8,7 +8,7 @@
 # Define user accounts
 users_users:
   - user: Mickey
-    name: "Mickey Chane"
+    name: "Mickey Chen"
     github: yuchunc
 
 # Users with sudo permission who should be set up on all servers.
