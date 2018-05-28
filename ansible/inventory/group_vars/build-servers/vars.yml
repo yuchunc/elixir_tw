@@ -1,8 +1,8 @@
 # Vars for build-servers group
 
 # App git repo
-app_repo: https://github.com/elixirtw/elixir_tw
-#app_branch: ansible-deploy
+app_repo: https://github.com/yuchunc/elixir_tw
+app_branch: ansible-deploy
 
 # Users who can ssh into the deploy account
 # This is needed to run the build and deploy scripts
