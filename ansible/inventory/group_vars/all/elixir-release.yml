@@ -15,7 +15,7 @@ elixir_release_app_user: app
 elixir_release_app_group: "{{ elixir_release_app_user }}"
 
 # OS user for deploy
-elixir_release_deploy_user: builder
+elixir_release_deploy_user: deployer
 elixir_release_deploy_group: "{{ elixir_release_deploy_user }}"
 
 # Port that Phoenix listens on
