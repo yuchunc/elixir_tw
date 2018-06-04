@@ -25,8 +25,8 @@ asdf install
 asdf install
 
 echo "Updating Elixir libs"
-mix local.hex --force
-mix local.rebar --force
+mix local.hex --if-missing --force
+mix local.rebar --if-missing --force
 
 echo "Building release"
 mix deps.get --only "$MIX_ENV"
